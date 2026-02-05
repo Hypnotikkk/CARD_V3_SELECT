@@ -74,10 +74,19 @@ body {
   background: transparent;
   padding: 0;
   margin: 0;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 #select-overlay.is-hidden {
   display: none;
+}
+
+#select-overlay button:focus,
+#select-overlay button:focus-visible,
+#select-overlay button:active {
+  outline: none;
 }
 
 #rotate-overlay {

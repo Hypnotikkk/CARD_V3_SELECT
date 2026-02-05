@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carte</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="stage" aria-live="polite">
+      <p id="hint">votre carte est ici</p>
+      <img
+        id="card"
+        src="card1.png"
+        alt="Carte"
+        draggable="false"
+        aria-hidden="true"
+      />
+    </main>
+    <div id="select-overlay" aria-hidden="true">
+      <button type="button" data-card="card1.png" aria-label="Carte 1"></button>
+      <button type="button" data-card="card2.png" aria-label="Carte 2"></button>
+      <button type="button" data-card="card3.png" aria-label="Carte 3"></button>
+      <button type="button" data-card="card4.png" aria-label="Carte 4"></button>
+    </div>
+    <div id="rotate-overlay" aria-hidden="true">
+      <p>Veuillez garder votre téléphone en mode portrait.</p>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
